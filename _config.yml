@@ -1,32 +1,60 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
 title: Not An Expert Yet
+email: notanexpertyet@gmail.com
+timezone: UTC
+url: "https://notanexpertyet.com"
+permalink: "/:title/"
 description: Not An Expert Yet Blog
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://notanexpertyet.com" # the base hostname & protocol for your site, e.g. http://example.com
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/favicon.ico'
+author: Jekaterina Sjomkina
+paginate: 30
+disqus: 'demowebsite'
+locale: en_us
+lang: en_us
+feed_items: 10
+feed_update_period: daily
+feed_update_frequency: 1
+markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
+sass:
+  sass_dir: _sass
+  style: :compressed
+ganalytics: UA-113961478-1
 
-# Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+# Authors
+authors:
+  sal:
+    name: Sal
+    display_name: Sal
+    avatar: 'assets/images/sal.png'
+    email: wowthemesnet@gmail.com
+    web: https://www.wowthemes.net/category/jekyll-themes/
+    twitter: https://twitter.com/wowthemesnet
+    description: "Author of Affiliates, a template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
+  john:
+    name: John
+    display_name: John
+    avatar: 'assets/images/john.png'
+    email: wowthemesnet@gmail.com
+    web: https://www.wowthemes.net/category/jekyll-themes/
+    twitter: https://twitter.com/wowthemesnet
+    description: "This is the author box. Write a short description of the author here. You are currently previewing Affiliates theme demo, a Jekyll template compatible with Github pages."
+
+# Social
+social:
+  instagram: https://www.instagram.com/bootstrapstarter/
+  facebook: https://www.facebook.com/bootstrapstartercom-346329609045284
+  twitter: https://twitter.com/bstartercom
+
+# Plugins
+plugins: 
+- jekyll-paginate
+- jekyll-sitemap
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-archives
 
 # Exclude from processing.
 # The following items will not be processed, by default.
